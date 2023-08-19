@@ -114,10 +114,15 @@ class HomeFragment : Fragment() {
         Log.d("@@@@", "noteFilter: ${p0}")
         val newFilterList = arrayListOf<NoteModel>()
         for (i in filterNoteList) {
-            if (i.title.contains(p0!!) || i.subtitle.contains(p0) || i.note.contains(p0)) {
+            if (i.title.lowercase().contains(p0!!.toString().lowercase()) || i.subtitle.lowercase()
+                    .contains(
+                        p0.toString().lowercase()
+                    ) || i.note.lowercase().contains(p0.toString().lowercase())
+            ) {
                 newFilterList.add(i)
             }
         }
         notesAdapter.filtering(newFilterList)
+
     }
 }
