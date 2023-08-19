@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/clearFilter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/filter"
+                android:padding="5dp"
+                android:src="@drawable/sort" />
+
+            <TextView
+                android:id="@+id/filterHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/filter"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="High"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/filterMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/filter"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="Medium"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/filterLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="Low"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcViewNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llFilter" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/icon_add"
+            app:tint="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

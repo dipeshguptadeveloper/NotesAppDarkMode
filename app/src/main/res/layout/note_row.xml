@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#707070"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <View
+            android:id="@+id/notePriority"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_dot" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/noteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="fjdfdjfdfjdfdjfkdjfdkfjdkfjdkfjdkfjdkfiturtirujfsdkfjdksfjdkfjdkfjdfkdjf"
+                android:textColor="#EADBDB"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/noteDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="20 August 2023"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/noteDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_delete" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesAppDarkMode" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/red</item>
+    </style>
+
+    <style name="Theme.NotesAppDarkMode" parent="Base.Theme.NotesAppDarkMode" />
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+    </style>
+
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
+
+</resources>
