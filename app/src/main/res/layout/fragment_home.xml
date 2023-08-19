@@ -12,9 +12,39 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Search Note....."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/llFilter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/searchView"
             android:gravity="center_vertical"
             android:padding="10dp">
 

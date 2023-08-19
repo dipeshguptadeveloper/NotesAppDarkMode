@@ -16,12 +16,17 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class NoteRecyclerAdapter(
     val context: Context,
-    val noteList: List<NoteModel>
+    var noteList: List<NoteModel>
 ) :
 
     RecyclerView.Adapter<NoteRecyclerAdapter.ViewHolder>() {
 
     val application: Application = Application()
+
+    fun filtering(newFilterList: ArrayList<NoteModel>){
+        noteList = newFilterList
+        notifyDataSetChanged()
+    }
 
     class ViewHolder(val binding: NoteRowBinding) : RecyclerView.ViewHolder(binding.root) {
 
