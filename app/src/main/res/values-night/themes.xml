@@ -2,6 +2,24 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NotesAppDarkMode" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimary">@color/red</item>
     </style>
+
+    <!--    <style name="BottomSheetStyle" parent="Theme.Material3.DayNight.BottomSheetDialog">-->
+    <!--        <item name="bottomSheetStyle">@style/Modal</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">-->
+    <!--        <item name="android:background">@drawable/delete_sheet</item>-->
+    <!--    </style>-->
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
+
 </resources>
+

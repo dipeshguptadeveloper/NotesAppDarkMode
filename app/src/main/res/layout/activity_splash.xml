@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
     <ImageView
+        android:id="@+id/imgLogo"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
         android:src="@drawable/notes_logo" />
 
     <TextView
+        android:id="@+id/txtAppTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
         android:layout_marginTop="20dp"
         android:text="Notes App"
         android:textAlignment="center"
@@ -27,10 +31,36 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppTitle"
         android:layout_marginTop="10dp"
         android:text="Life is too fast don't forget anything\n just Note it!"
         android:textAlignment="center"
         android:textColor="@color/red"
         android:textSize="18sp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designed &amp; Developed by"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dipesh Kumar Gupta"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

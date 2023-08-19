@@ -63,7 +63,7 @@ class NoteRecyclerAdapter(
 
             noteDelete.setOnClickListener {
                 val bottomSheet: BottomSheetDialog =
-                    BottomSheetDialog(context, R.style.BottomSheetStyle)
+                    BottomSheetDialog(context, R.style.AppBottomSheetDialogTheme)
                 bottomSheet.setContentView(R.layout.dialog_delete)
 
                 val textViewYes = bottomSheet.findViewById<TextView>(R.id.btnDeleteYes)
