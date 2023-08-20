@@ -70,11 +70,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:background="@drawable/filter"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="25dp"
                 android:paddingVertical="5dp"
                 android:text="High"
                 android:textColor="@color/red"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -83,11 +83,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:background="@drawable/filter"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="25dp"
                 android:paddingVertical="5dp"
                 android:text="Medium"
                 android:textColor="@color/yellow"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -95,11 +95,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/filter"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="25dp"
                 android:paddingVertical="5dp"
                 android:text="Low"
                 android:textColor="@color/green"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
 

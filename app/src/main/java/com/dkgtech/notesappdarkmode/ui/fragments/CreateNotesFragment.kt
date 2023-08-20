@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.dkgtech.notesappdarkmode.R
@@ -72,7 +73,11 @@ class CreateNotesFragment : Fragment() {
         val date: CharSequence = DateFormat.format("MMMM d, yyyy", d.time)
 
         val data = NoteModel(null, title, subtitle, note, date.toString(), priority)
-        viewModel.addNote(data)
+        if (title != "") {
+            viewModel.addNote(data)
+        } else {
+            Toast.makeText(requireContext(), "Enter Title", Toast.LENGTH_SHORT).show()
+        }
 
         Navigation.findNavController(it!!).navigate(R.id.action_createNotesFragment_to_homeFragment)
 
